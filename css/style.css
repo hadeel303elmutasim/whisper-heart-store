@@ -1136,7 +1136,7 @@ main {
 
 .s8-container {
     width: 90%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -1305,6 +1305,12 @@ main {
 
 /* Responsive................................. */
 @media (max-width: 768px) {
+      html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
     .first-header {
         flex-direction: column;
         gap: 10px;
@@ -1527,5 +1533,30 @@ main {
     .s8-text-left h3,
     .s8-text-left p {
         text-align: center;
+    }
+    
+    .s8-search-middle {
+        flex-direction: column; 
+        width: 100%;            
+        gap: 10px;            
+    }
+
+    .s8-search-middle input {
+        width: 100%;          
+        font-size: 16px;      
+    }
+
+    .s8-search-middle button {
+        margin-left: 0;        
+        width: 100%;           
+        padding: 12px 0;       
+    }
+    
+    .s8-socials-right {
+        margin-top: 15px;
+    }
+    
+    .s8-socials-right a {
+        margin: 0 10px;        
     }
 }
